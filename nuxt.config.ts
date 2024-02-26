@@ -1,10 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  css: ["~/assets/css/base.css"],
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@ant-design-vue/nuxt",
+    "nuxt-icon",
+
     [
       "@nuxtjs/google-fonts",
       {
@@ -19,7 +23,7 @@ export default defineNuxtConfig({
     // Options
   },
   tailwindcss: {
-    cssPath: "/assets/css/tailwind.css",
+    cssPath: "/assets/css/base.css",
     configPath: "tailwind.config",
     config: {
       theme: {
@@ -72,6 +76,7 @@ export default defineNuxtConfig({
             "collapsible-up": "collapsible-up 0.2s ease-in-out",
           },
           colors: {
+            violet: "#a152c7",
             primary_bg: "#0b1120",
             sidebar: "#0e172a",
           },

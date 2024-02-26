@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ * {
+  font-family:Lato, 'sans-serif';
+  transition-duration: 333ms;
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  @apply text-white
+}
